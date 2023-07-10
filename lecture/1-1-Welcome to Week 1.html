@@ -14003,7 +14003,7 @@ Welcome to Week 1
   <script>
       const video_offline = "../videos/01-Week 1/1-1-Welcome to Week 1.mp4";
       document.addEventListener("DOMContentLoaded", function(){
-        if(navigator.onLine){
+        if(!navigator.onLine){
           var lecture_video_player = document.getElementById("lecture_video_player");
           document.getElementById("lecture_video_player").src = video_offline;
         }
